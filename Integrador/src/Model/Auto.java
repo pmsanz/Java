@@ -27,7 +27,7 @@ public class Auto extends Vehiculo{
     public String toString(){
     String resultado = "";
         
-    resultado += "Color del auto:" + this.color + "Marca del auto:" + this.marca + "Modelo del auto:" + this.modelo + "Alto del vehiculo:" + super.getAlto() + "Ancho del vehiculo:" + super.getAncho() + "Largo del Vehiculo:" + super.getLargo();
+    resultado += "Color del auto: " + this.color + " Marca del auto:" + this.marca + " Modelo del auto: " + this.modelo + " Alto del vehiculo: " + super.getAlto() + " Ancho del vehiculo: " + super.getAncho() + " Largo del Vehiculo: " + super.getLargo();
         
     return resultado;
     
