@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="433.0" prefWidth="517.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.VentanaMaestra">
+   <children>
+      <SplitPane layoutY="26.0" prefHeight="338.0" prefWidth="461.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="380.0" prefWidth="452.0" />
+        </items>
+      </SplitPane>
+      <MenuBar layoutY="2.0" prefHeight="28.0" prefWidth="527.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Abrir Ventana">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Autos" />
+                  <MenuItem mnemonicParsing="false" text="Compradores" />
+                  <MenuItem mnemonicParsing="false" text="Vendedores" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Ayuda on-Line" />
+                  <MenuItem mnemonicParsing="false" text="Configuracion" />
+                  <MenuItem mnemonicParsing="false" text="Salir" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
