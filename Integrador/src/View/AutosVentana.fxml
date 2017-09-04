@@ -6,27 +6,38 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.AutosVentanaController">
+<AnchorPane id="AnchorPane" prefHeight="335.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AutosVentanaController">
    <children>
-      <Accordion layoutX="33.0" layoutY="71.0">
-        <panes>
-          <TitledPane animated="false" text="untitled 1">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </TitledPane>
-          <TitledPane animated="false" text="untitled 2">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </TitledPane>
-          <TitledPane animated="false" text="untitled 3">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-            </content>
-          </TitledPane>
-        </panes>
-      </Accordion>
+      <SplitPane dividerPositions="0.21978021978021978" layoutY="10.0" prefHeight="315.0" prefWidth="598.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="10.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView prefHeight="308.0" prefWidth="146.0">
+                    <columns>
+                      <TableColumn prefWidth="65.0" text="Marca" />
+                      <TableColumn prefWidth="65.0" text="Modelo" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="310.0" prefWidth="435.0">
+               <children>
+                  <TextArea layoutX="10.0" layoutY="147.0" prefHeight="126.0" prefWidth="441.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="147.0" />
+                  <Button layoutX="10.0" layoutY="276.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="74.0" text="Nuevo" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="10.0" />
+                  <Button layoutX="85.0" layoutY="276.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="74.0" text="Editar" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="85.0" />
+                  <Button layoutX="160.0" layoutY="276.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="74.0" text="Borrar" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="160.0" />
+                  <Button layoutX="376.0" layoutY="276.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="74.0" text="Cerrar" />
+                  <Label layoutX="14.0" layoutY="35.0" text="Ancho :" />
+                  <Label layoutX="14.0" layoutY="53.0" text="Largo :" />
+                  <Label layoutX="14.0" layoutY="72.0" text="Modelo :" />
+                  <Label layoutX="14.0" layoutY="89.0" text="Marca :" />
+                  <Label layoutX="14.0" layoutY="107.0" text="Color :" />
+                  <Label layoutX="14.0" layoutY="125.0" text="Precio :" />
+                  <Label layoutX="14.0" layoutY="17.0" text="Alto :" />
+                  <Label layoutX="14.0" text="Datos del Auto" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
    </children>
 </AnchorPane>
