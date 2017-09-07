@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="475.0" prefWidth="494.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AutosVentanaEditableController">
+   <children>
+      <Pane prefHeight="336.0" prefWidth="469.0" />
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="494.0">
+         <children>
+            <TextArea fx:id="fieldEquipamiento" layoutX="10.0" layoutY="320.0" prefHeight="110.0" prefWidth="469.0" promptText="Equipamiento..." AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="320.0" />
+            <Button fx:id="btnOk" layoutX="319.0" layoutY="444.0" mnemonicParsing="false" onAction="#btnOk_Click" prefHeight="24.0" prefWidth="74.0" text="OK" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="319.0" />
+            <Button fx:id="btnCancelar" layoutX="406.0" layoutY="444.0" mnemonicParsing="false" onAction="#btnCancelar_Click" prefHeight="24.0" prefWidth="74.0" text="Cancel" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="14.0" />
+            <Label layoutX="14.0" layoutY="81.0" text="Ancho :" />
+            <Label layoutX="14.0" layoutY="121.0" text="Largo :" />
+            <Label layoutX="14.0" layoutY="158.0" text="Modelo :" />
+            <Label layoutX="14.0" layoutY="193.0" text="Marca :" />
+            <Label layoutX="14.0" layoutY="232.0" text="Color :" />
+            <Label layoutX="14.0" layoutY="270.0" text="Precio :" />
+            <Label layoutX="14.0" layoutY="37.0" text="Alto :" />
+            <Label layoutX="14.0" layoutY="3.0" text="Datos del Auto" />
+            <TextField fx:id="txtAlto" layoutX="89.0" layoutY="34.0" onAction="#txtAlto_Click" prefHeight="25.0" prefWidth="317.0" />
+            <TextField fx:id="txtAncho" layoutX="89.0" layoutY="78.0" onAction="#txtAncho_Click" prefHeight="25.0" prefWidth="317.0" />
+            <TextField fx:id="txtLargo" layoutX="89.0" layoutY="117.0" onAction="#txtLargo_Click" prefHeight="25.0" prefWidth="317.0" />
+            <TextField fx:id="txtPrecio" layoutX="89.0" layoutY="267.0" onAction="#txtPrecio_Click" prefHeight="25.0" prefWidth="317.0" />
+            <ComboBox layoutX="90.0" layoutY="154.0" prefWidth="150.0" />
+            <ComboBox layoutX="90.0" layoutY="191.0" prefWidth="150.0" />
+            <ComboBox layoutX="90.0" layoutY="230.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

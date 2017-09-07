@@ -16,10 +16,32 @@ import javafx.scene.control.TableColumn;
 /**
  * FXML Controller class
  *
- * @author Pablo
+ * @author psanz
  */
-public class AutosVentanaController implements Initializable {
+public class CompradoresVentanaController implements Initializable {
 
+    @FXML
+    private TableColumn<?, ?> tblNom;
+    @FXML
+    private Button btnNuevo;
+    @FXML
+    private Button btnEditar;
+    @FXML
+    private Button btnBorrar;
+    @FXML
+    private Label lblApellido;
+    @FXML
+    private Label lblNro;
+    @FXML
+    private Label lblVendidos;
+    @FXML
+    private Label lblNombre;
+    @FXML
+    private Label lblDatos;
+    @FXML
+    private Button btnCerrar;
+    @FXML
+    private Label lblPresupuesto;
 
     /**
      * Initializes the controller class.
